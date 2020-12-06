@@ -7,4 +7,4 @@ This is a web app build with Flask which is able to scrap reviews for a particul
 
 
 
-![Myphoto](resources/)
+![Myphoto](resources/Python Coding Python Application.png)
