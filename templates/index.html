@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<style>
+    .form_container{
+    width:500px;
+    border:5px solid red;
+    border-radius:20px;
+    padding:30px;
+    margin:auto;
+    margin-top:30px;
+
+    }
+    .btn{
+    align:center;
+
+   position:relative;
+   left:50%;
+   top:50%;
+   margin-top:10px;
+
+    }
+    .form-bar{
+    margin-left:80px;
+    text-align:center;
+    margin-right:40px;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+            <h2 align="center"><span class="heading_font">Flipkart Review Scrapper</span></h2>
+
+    	</div>
+
+    <div class="form_container">
+        <form action="/scrap" method="POST">
+            <div class="form-bar">
+            <input class="form-input" type="text" name="content" id="content" placeholder=" Write Product Name" required>
+            </div>
+            <input type="submit" value="Search" class="btn">
+        </form>
+    </div>
+</div>
+{% endblock %}
